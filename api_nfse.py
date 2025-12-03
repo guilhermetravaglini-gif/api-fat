@@ -176,7 +176,7 @@ def obter_faturamento(request: FaturamentoRequest):
         
         return FaturamentoResponse(
             CNPJ=cnpj_formatado,
-            Faturamento=f"R$ {faturamento:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.'),
+            Faturamento=round(faturamento,2),
             Notas_Encontradas=quantidade,
             Periodo=periodo,
             Mes=mes_label
