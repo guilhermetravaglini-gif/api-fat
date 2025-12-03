@@ -19,7 +19,7 @@ class FaturamentoRequest(BaseModel):
 
 class FaturamentoResponse(BaseModel):
     CNPJ: str
-    Faturamento: str
+    Faturamento: float
     Notas_Encontradas: int
     Periodo: str
     Mes: str
